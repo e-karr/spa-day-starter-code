@@ -4,23 +4,34 @@ body {
 
 div {
     margin: auto;
-    width: 50%;
-    padding: 10px;
+    width: 75%;
     text-align: center;
+}
+
+section {
+    margin: auto;
+    width: 50%;
     background-color: white;
 }
 
 h1 {
     margin: auto;
-        width: 50%;
-        padding: 10px;
-        text-align: center;
-        background-color: white;
+    width: 50%;
+    padding: 10px;
+    text-align: center;
 }
 
 table {
     margin: auto;
-            width: 50%;
-            padding: 10px;
-            text-align: center;
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+}
+
+footer {
+    display: flex;
+}
+
+footer > div {
+    height: 50px;
 }
