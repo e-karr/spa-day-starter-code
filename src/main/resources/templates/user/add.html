@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title></title>
+    <link href="../static/css/styles.css" th:href="@{/css/styles.css}" rel="stylesheet" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+            crossorigin="anonymous"></script>
+</head>
+<body class="container">
+    <form method="post" action="/user">
+        <div class="form-group">
+            <label class="form-label">Username:
+                <input type="text" name="username" class="form-control" th:value="${username}">
+            </label>
+        </div>
+        <div class="form-group">
+            <label class="form-label">Email:
+                <input type="email" name="email" class="form-control" th:value="${email}">
+            </label>
+        </div>
+        <div class="form-group">
+            <label class="form-label">Password:
+                <input type="password" name="password" class="form-control">
+            </label>
+        </div>
+        <div class="form-group">
+            <label class="form-label">Verify Password:
+                <input type="password" name="verifyPassword" class="form-control">
+            </label>
+            <div class="form-text text-danger" th:text="${error}"></div>
+        </div>
+
+        <div>
+            <button class="btn btn-success" type="submit">Submit</button>
+        </div>
+    </form>
+
+</body>
+</html>
