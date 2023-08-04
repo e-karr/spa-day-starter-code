@@ -12,15 +12,22 @@ div {
 
 h1 {
     margin: auto;
-        width: 50%;
-        padding: 10px;
-        text-align: center;
-        background-color: white;
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+    background-color: white;
 }
 
 table {
     margin: auto;
-            width: 50%;
-            padding: 10px;
-            text-align: center;
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+}
+
+.error {
+    color: red;
+    padding: 5px;
+    background: rgba(255, 0, 0, 0.75);
+    border: 2px solid red;
 }
