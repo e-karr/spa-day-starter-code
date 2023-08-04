@@ -28,6 +28,6 @@ table {
 .error {
     color: red;
     padding: 5px;
-    background: rgba(255, 0, 0, 0.75);
+    background: rgba(255, 0, 0, 0.25);
     border: 2px solid red;
 }
