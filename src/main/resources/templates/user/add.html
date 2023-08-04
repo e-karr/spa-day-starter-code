@@ -34,12 +34,12 @@
         <div>
             <label>
                 Verify Password:
-                <input type = 'password' name = 'verify'>
+                <input type = 'password' name = 'verifyPassword'>
             </label>
-            <p class="error" th:errors="${user.verify}"></p>
+            <p class="error" th:errors="${user.verifyPassword}"></p>
         </div>
 
-        <p class="error" th:if="${error}" th:text="${error}"></p>
+<!--        <p class="error" th:if="${error}" th:text="${error}"></p>-->
 
         <button type="submit">Sign Up</button>
     </form>
